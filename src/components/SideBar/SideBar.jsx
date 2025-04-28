@@ -26,7 +26,7 @@ export default function SideBar() {
     closeSideHeader();
   };
   return (
-    <div className="fixed inset-0 z=50 flex">
+    <div className="fixed inset-0 z-50 flex">
       {/* Full screen sidebar */}
       <div className="w-full bg-white shadow-xl flex flex-col h-full">
         {/* Header */}
