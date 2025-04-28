@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+body,
+#root,
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
