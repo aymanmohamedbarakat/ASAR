@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import PagesLayout from "./Layout/PagesLayout";
 import Home from "./Pages/Home";
+import Blog from "./Pages/Blog";
+import BlogsDetails from "./components/Blog/BlogsDetails/BlogsDetails";
 
 export default function App() {
   return (
@@ -10,8 +12,9 @@ export default function App() {
         <Route path="/" element={<PagesLayout />} >
           <Route index element={<Home />} />
           <Route path="لماذا-نحن" element={<h1 className="text-3xl">لماذا نحن ؟</h1>} />
-          <Route path="تواصل-معنا<" element={<h1 className="text-3xl">تواصل معنا</h1>} />
-          <Route path="أخبار" element={<h1 className="text-3xl">أخبار</h1>} />
+          <Route path="تواصل-معنا" element={<h1 className="text-3xl">تواصل معنا</h1>} />
+          <Route path="الأخبار" element={<Blog />} />
+          <Route path="الأخبار/:blogId" element={<BlogsDetails />} />
           <Route path="تقارير" element={<h1 className="text-3xl">تقارير</h1>} />
           <Route path="تحقيقات" element={<h1 className="text-3xl">تحقيقات</h1>} />
           <Route path="حوارات" element={<h1 className="text-3xl">حوارات</h1>} />
