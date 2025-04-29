@@ -6,6 +6,13 @@ import Blog from "./Pages/Blog";
 import BlogsDetails from "./components/Blog/BlogsDetails/BlogsDetails";
 import Reports from "./Pages/Reports";
 import ReportsDetails from "./components/Reports/ReportsDetails";
+import Investigations from "./Pages/Investigations";
+import InvestigationsDetails from "./components/Investigations/InvestigationsDetails";
+import DialoguesDetails from "./components/Dialogues/DialoguesDetails";
+import Dialogues from "./Pages/Dialogues";
+import Articles from "./Pages/Articles";
+import ArticlesDetails from "./components/Articles/ArticlesDetails";
+import WhyUS from "./Pages/WhyUS";
 
 export default function App() {
   return (
@@ -13,15 +20,18 @@ export default function App() {
       <Routes>
         <Route path="/" element={<PagesLayout />} >
           <Route index element={<Home />} />
-          <Route path="لماذا-نحن" element={<h1 className="text-3xl">لماذا نحن ؟</h1>} />
+          <Route path="لماذا-نحن" element={<WhyUS />} />
           <Route path="تواصل-معنا" element={<h1 className="text-3xl">تواصل معنا</h1>} />
           <Route path="الأخبار" element={<Blog />} />
           <Route path="الأخبار/:blogId" element={<BlogsDetails />} />
           <Route path="تقارير" element={<Reports />} />
           <Route path="تقارير/:id" element={<ReportsDetails />} />
-          <Route path="تحقيقات" element={<h1 className="text-3xl">تحقيقات</h1>} />
-          <Route path="حوارات" element={<h1 className="text-3xl">حوارات</h1>} />
-          <Route path="مقالات" element={<h1 className="text-3xl">مقالات</h1>} />
+          <Route path="تحقيقات" element={<Investigations />} />
+          <Route path="تحقيقات/:id" element={<InvestigationsDetails />} />
+          <Route path="حوارات" element={<Dialogues />} />
+          <Route path="حوارات/:id" element={<DialoguesDetails />} />
+          <Route path="مقالات" element={<Articles />} />
+          <Route path="مقالات/:id" element={<ArticlesDetails />} />
           <Route path="*" element={<h1 className="text-3xl">هذه الصفحة غير متوفرة</h1>} />
         </Route>
       </Routes>

@@ -126,52 +126,12 @@ export default function ReportsDetails() {
                 : null}
             </Swiper>
 
-            {/* Image Gallery */}
-            {/* {report.images && report.images.length > 0 ? (
-              <div className="relative h-96 bg-gray-900">
-                <img
-                  src={report.images[activeImageIndex]}
-                  alt={report.title}
-                  className="w-full h-full object-contain"
-                />
-
-                
-                {report.images.length > 1 && (
-                  <>
-                    <button
-                      onClick={handlePrevImage}
-                      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-2 rounded-full"
-                    >
-                      <ChevronRight size={20} />
-                    </button>
-                    <button
-                      onClick={handleNextImage}
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-2 rounded-full"
-                    >
-                      <ChevronLeft size={20} />
-                    </button>
-
-                    
-                    <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-                      {report.images.map((_, idx) => (
-                        <button
-                          key={idx}
-                          onClick={() => setActiveImageIndex(idx)}
-                          className={`w-2 h-2 rounded-full ${
-                            idx === activeImageIndex
-                              ? "bg-white"
-                              : "bg-white/50"
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </>
-                )}
-              </div>
-            ) : null} */}
-
             {/* Category Tag */}
-            <div className="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-md font-medium">
+            <div
+              className={`${
+                report.images ? "absolute top-4 right-4" : ""
+              } bg-blue-600 text-white px-4 py-2 rounded-md font-medium z-10`}
+            >
               {report.tags}
             </div>
           </div>
