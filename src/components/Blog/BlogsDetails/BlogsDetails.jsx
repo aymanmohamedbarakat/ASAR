@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useBlog } from "../../../Hooks/blogStore";
 import { useParams } from "react-router-dom";
-import Breadcrumb from "../Breadcrumb/Breadcrumb";
+
 import RelatedBlogs from "../RelatedBlogs/RelatedBlogs";
+import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 
 export default function BlogsDetails() {
   const { blogId } = useParams();

@@ -1,37 +1,30 @@
-// import React from 'react'
-
-// export default function Blog() {
-//   return (
-//     <div>Blog</div>
-//   )
-// }
-
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useBlog } from "../Hooks/blogStore";
-import Breadcrumb from "../components/Blog/Breadcrumb/Breadcrumb";
+import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
+
 
 
 export default function Blog() {
   const { blogs } = useBlog();
   const [filteredBlogs, setFilteredBlogs] = useState([]);
-  const [activeCategory, setActiveCategory] = useState("جميع المقالات");
+  const [activeCategory, setActiveCategory] = useState("جميع الأخبار");
   
   // Get unique categories from blogs
-  const categories = ["جميع المقالات", ...new Set(blogs.map(blog => blog.nameNews))];
-  
+  const categories = ["جميع الأخبار", ...new Set(blogs.map(blog => blog.nameNews))];
+  // تعديل اضافة tags
   useEffect(() => {
-    if (activeCategory === "جميع المقالات") {
+    if (activeCategory === "جميع الأخبار") {
       setFilteredBlogs(blogs);
     } else {
       setFilteredBlogs(blogs.filter(blog => blog.nameNews === activeCategory));
     }
+    console.log(blogs)
   }, [activeCategory, blogs]);
 
   const breadcrumbItems = [
     { label: "الرئيسية", link: "/" },
-    { label: "المقالات", link: "#" },
+    { label: "الأخبار", link: "#" },
   ];
 
   return (
@@ -39,7 +32,7 @@ export default function Blog() {
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumbItems} />
       
-      <h1 className="text-3xl font-bold mb-8 text-right">المقالات والأخبار</h1>
+      <h1 className="text-3xl font-bold mb-8 text-right"> الأخبار</h1>
       
       {/* Categories Filter */}
       <div className="flex flex-wrap gap-2 justify-end mb-8">
@@ -124,7 +117,7 @@ export default function Blog() {
       
       {filteredBlogs.length === 0 && (
         <div className="text-center py-10 text-gray-500">
-          لا توجد مقالات في هذه الفئة حالياً
+          لا توجد أخبار في هذه الفئة حالياً
         </div>
       )}
     </div>

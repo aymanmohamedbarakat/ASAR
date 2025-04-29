@@ -4,6 +4,8 @@ import PagesLayout from "./Layout/PagesLayout";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
 import BlogsDetails from "./components/Blog/BlogsDetails/BlogsDetails";
+import Reports from "./Pages/Reports";
+import ReportsDetails from "./components/Reports/ReportsDetails";
 
 export default function App() {
   return (
@@ -15,7 +17,8 @@ export default function App() {
           <Route path="تواصل-معنا" element={<h1 className="text-3xl">تواصل معنا</h1>} />
           <Route path="الأخبار" element={<Blog />} />
           <Route path="الأخبار/:blogId" element={<BlogsDetails />} />
-          <Route path="تقارير" element={<h1 className="text-3xl">تقارير</h1>} />
+          <Route path="تقارير" element={<Reports />} />
+          <Route path="تقارير/:id" element={<ReportsDetails />} />
           <Route path="تحقيقات" element={<h1 className="text-3xl">تحقيقات</h1>} />
           <Route path="حوارات" element={<h1 className="text-3xl">حوارات</h1>} />
           <Route path="مقالات" element={<h1 className="text-3xl">مقالات</h1>} />

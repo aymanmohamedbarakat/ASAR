@@ -1,5 +1,5 @@
 import { Link } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function RelatedBlogs({ blogs }) {
   if (!blogs || blogs.length === 0) {

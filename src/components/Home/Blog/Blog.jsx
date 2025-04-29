@@ -120,7 +120,7 @@ export default function HomeBlog() {
     <div className="my-10">
       <div className="flex justify-between items-center py-2">
         <div className="text-center text-2xl md:text-3xl">
-          <Title text1={"أحدث "} text2={"المقالات"} />
+          <Title text1={"أحدث "} text2={"الأخبار"} />
         </div>
         <div>
           <Link
