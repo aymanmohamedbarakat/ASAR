@@ -31,13 +31,14 @@ export default function Banner() {
       {/* Hero Section with Video */}
       <div className="relative w-full h-screen overflow-hidden rounded-2xl">
         {/* Video Background */}
+        {/* Video Background */}
         <div className="absolute inset-0">
           <video
             ref={videoRef}
             autoPlay
             muted
             loop
-            className="w-full h-full object-cover"
+            className="absolute w-full h-full object-cover sm:object-contain md:object-cover left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full max-w-none"
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
           >

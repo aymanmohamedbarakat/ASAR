@@ -2,16 +2,15 @@ import React from 'react'
 import { useLinks } from '../../Hooks/uiStore';
 import { Link } from 'react-router-dom';
 import { assets } from '../../assets/frontend_assets/assets';
-import { Facebook, Instagram, Mail, MapPin, Phone, Twitter, Youtube } from 'lucide-react';
-
+import { Facebook, Instagram, Mail, MapPin, Phone,} from 'lucide-react';
+import { PiTiktokLogoThin } from "react-icons/pi";
 export default function Footer() {
     const { links } = useLinks();
   
     const socialLinks = [
-      { icon: <Facebook  size={20} />, url: "#", label: "Facebook" },
-      { icon: <Twitter size={20} />, url: "#", label: "Twitter" },
-      { icon: <Instagram size={20} />, url: "#", label: "Instagram" },
-      { icon: <Youtube size={20} />, url: "#", label: "Youtube" }
+      { icon: <Facebook  size={20} />, url: "https://www.facebook.com/share/1FePcFqSsW/", label: "Facebook" },
+      { icon: <PiTiktokLogoThin size={20} />, url: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1", label: "Twitter" },
+      { icon: <Instagram size={20} />, url: "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr", label: "Instagram" },
     ];
   
     const contactInfo = [
@@ -31,7 +30,7 @@ export default function Footer() {
                 <img src={assets.logo} className="w-24" alt="الشعار" />
               </Link>
               <p className="text-gray-300 text-sm mb-4">
-                بوابة إخبارية شاملة تقدم أحدث الأخبار والتقارير والتحليلات في مختلف المجالات السياسية والاقتصادية والثقافية والرياضية.
+                بوابة إخبارية شاملة تقدم أحدث الأخبار والتقارير والتحليلات في مختلف المجالات  السياحة و الآثار و التاريخ.
               </p>
               <div className="flex items-center gap-3 mt-2">
                 {socialLinks.map((social, index) => (
