@@ -22,7 +22,7 @@ export default function TeamSection() {
               key={member.id || index} 
               className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-80 overflow-hidden relative">
                 <img 
                   src={member.image} 
                   alt={member.name} 
