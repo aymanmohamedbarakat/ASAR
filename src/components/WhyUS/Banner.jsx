@@ -31,14 +31,13 @@ export default function Banner() {
       {/* Hero Section with Video */}
       <div className="relative w-full h-screen overflow-hidden rounded-2xl">
         {/* Video Background */}
-        {/* Video Background */}
         <div className="absolute inset-0">
           <video
             ref={videoRef}
             autoPlay
             muted
             loop
-            className="absolute w-full h-full object-cover sm:object-contain md:object-cover left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full max-w-none"
+            className="absolute w-full h-full object-contain sm:object-contain md:object-cover left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full max-w-none"
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
           >
@@ -52,11 +51,11 @@ export default function Banner() {
 
         {/* Content Over Video */}
         <div className="relative h-full flex flex-col items-center justify-center text-white px-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wider">
+          <h1 className="text-2xl md:text-7xl font-bold mb-6 tracking-wider">
             أثــــر
           </h1>
           <div className="w-24 h-1 bg-amber-500 mb-8"></div>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-center font-light">
+          <p className="text-sm md:text-2xl max-w-3xl mx-auto text-center font-light">
             رحلة عبر أزمنة مصر العريقة، حيث تتلاقى روعة الحضارة وإبداع الفن
             والتراث
           </p>
