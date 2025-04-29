@@ -42,15 +42,40 @@ import Dialogues1_2 from "./Dialogues/Dialogues1-2.jpg";
 import Articles1_1 from "./Articles/Articles1-1.jpg";
 
 ///////////////////////////////////////////////////////
+// import member1 from "./Team/بلال محمد حلمي.jpg";
+// import member2 from "./Team/حبيبه مبروك  محمد.jpg";
+// import member3 from "./Team/رحمه خالد.jpg";
+// import member4 from "./Team/عيد أيمن محمد.jpg";
+// import member5 from "./Team/محمد عصام.jpg";
+// import member6 from "./Team/ندا احمد.jpg";
+// import member7 from "./Team/ندى أحمد علي.jpg";
+// import member8 from "./Team/هاجر القذافي عبد القادر.jpg";
+// import member9 from "./Team/هالة فتوح.jpg";
+// import member10 from "./Team/يوسف محمد عبد العال.jpg";
+
+import member1 from "./Team/member1.jpg";
+import member2 from "./Team/member2.jpg";
+import member3 from "./Team/member3.jpg";
+import member4 from "./Team/member4.jpg";
+import member5 from "./Team/member5.jpg";
+import member6 from "./Team/member6.jpg";
+import member7 from "./Team/member7.jpg";
+import member8 from "./Team/member8.jpg";
+import member9 from "./Team/member9.jpg";
+import member10 from "./Team/member10.jpg";
+
+////////////////////////////////////////////////////////////
 import logo from "./main-bg.jpg";
 import menu_icon from "./menu_icon.png";
 import cross_icon from "./cross_icon.png";
 import banner from "./banner.mp4";
+import WhyAsar from "./aaa.mp4";
 export const assets = {
   logo,
   menu_icon,
   cross_icon,
   banner,
+  WhyAsar,
 };
 
 export const blogs = [
@@ -810,6 +835,60 @@ export const articles = [
     `,
   },
 ];
+
+
+export const TeamMember = [
+{
+  id:'1',
+  name:'بلال محمد حلمي.',
+  image:[member1]
+},
+{
+  id:'2',
+  name:'حبيبه مبروك  محمد.',
+  image:[member2]
+},
+{
+  id:'3',
+  name:'رحمه خالد.',
+  image:[member3]
+},
+{
+  id:'4',
+  name:'عيد أيمن محمد.',
+  image:[member4]
+},
+{
+  id:'5',
+  name:'محمد عصام.',
+  image:[member5]
+},
+{
+  id:'6',
+  name:'ندا احمد.',
+  image:[member6]
+},
+{
+  id:'7',
+  name:'ندى أحمد علي.',
+  image:[member7]
+},
+{
+  id:'8',
+  name:'هاجر القذافي عبد القادر.',
+  image:[member8]
+},
+{
+  id:'9',
+  name:'هالة فتوح.',
+  image:[member9]
+},
+{
+  id:'10',
+  name:'يوسف محمد عبد العال.',
+  image:[member10]
+}
+]
 
 // export const products = [
 //   {

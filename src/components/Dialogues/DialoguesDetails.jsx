@@ -216,7 +216,7 @@ export default function DialoguesDetails() {
                           .slice(0, 150) + "..."
                       : ""}
                   </p>
-                )}{" "}
+                )}
               </p>
             </div>
           </div>

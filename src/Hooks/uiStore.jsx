@@ -9,7 +9,7 @@ export const useLinks = create(()=>({
         { name: "حوارات", path: "/حوارات" },
         { name: "مقالات", path: "/مقالات" },
         { name: "لماذا نحن ؟", path: "/لماذا-نحن" },
-        { name: "تواصل معنا", path: "/تواصل-معنا" },
+        { name: "فريق العمل", path: "/فريق-العمل"},
     ],
     setLinks: (newLinks) => set({ links: newLinks }),
 }))

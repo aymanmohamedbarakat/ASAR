@@ -13,6 +13,7 @@ import Dialogues from "./Pages/Dialogues";
 import Articles from "./Pages/Articles";
 import ArticlesDetails from "./components/Articles/ArticlesDetails";
 import WhyUS from "./Pages/WhyUS";
+import TeamSection from "./Pages/TeamSection";
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         <Route path="/" element={<PagesLayout />} >
           <Route index element={<Home />} />
           <Route path="لماذا-نحن" element={<WhyUS />} />
-          <Route path="تواصل-معنا" element={<h1 className="text-3xl">تواصل معنا</h1>} />
+          <Route path="فريق-العمل" element={<TeamSection />} />
           <Route path="الأخبار" element={<Blog />} />
           <Route path="الأخبار/:blogId" element={<BlogsDetails />} />
           <Route path="تقارير" element={<Reports />} />

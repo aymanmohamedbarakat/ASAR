@@ -127,7 +127,7 @@ export default function HomeBlog() {
             to="/الأخبار"
             className="inline-block mb-3 text-blue-600 hover:text-blue-800 transition-colors"
           >
-         جميع المقالات
+         جميع الأخبار
           </Link>
         </div>
       </div>
