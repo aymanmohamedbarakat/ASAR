@@ -3248,7 +3248,7 @@ export const investigations = [
   {
     id: "2222",
     title: "«كنوز منسية».. أماكن مهدور حقها في السياحة المصرية ",
-    writer: null,
+    writer: "هاجر القذافي",
     tags: "السياحة ",
     images: [
       Investigation2_1,
@@ -3412,7 +3412,7 @@ export const investigations = [
     id: "3333",
     title:
       '"السياحة الإسلامية في مصر".. رحلة عبر تاريخ من النور والإبداع المعماري',
-    writer: null,
+    writer: "رحمة عوض",
     tags: "السياحة ",
     images: [
       Investigation3_1,
@@ -5981,9 +5981,10 @@ export const TeamMember = [
       "خبير في الآثار المصرية القديمة مع خبرة 8 سنوات في مجال السياحة التاريخية",
     image: [member1],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -5993,9 +5994,10 @@ export const TeamMember = [
     description: "متخصصة في تاريخ الدولة الحديثة وآثار منطقة الأقصر",
     image: [member2],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6005,9 +6007,10 @@ export const TeamMember = [
     description: "خبيرة في تنظيم الزيارات للمواقع الأثرية والمتاحف",
     image: [member3],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6017,9 +6020,10 @@ export const TeamMember = [
     description: "متخصص في التصوير الفوتوغرافي للآثار والمواقع التاريخية",
     image: [member4],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6029,9 +6033,10 @@ export const TeamMember = [
     description: "باحث متخصص في الحضارة الإسلامية وتاريخ مصر الوسيط",
     image: [member5],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6041,9 +6046,10 @@ export const TeamMember = [
     description: "متخصصة في التسويق السياحي والترويج للمواقع الأثرية",
     image: [member6],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6053,9 +6059,10 @@ export const TeamMember = [
     description: "متخصصة في إعداد المحتوى التاريخي والثقافي للمواقع السياحية",
     image: [member7],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6065,9 +6072,10 @@ export const TeamMember = [
     description: "متخصصة في آثار الدولة القديمة وعلم المصريات",
     image: [member8],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6077,9 +6085,10 @@ export const TeamMember = [
     description: "متخصصة في التواصل مع المؤسسات الثقافية والتعليمية",
     image: [member9],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
   {
@@ -6089,9 +6098,10 @@ export const TeamMember = [
     description: "مسؤول عن تطوير المنصات التقنية للمواقع السياحية والأثرية",
     image: [member10],
     socialLinks: {
-      twitter: "#",
-      linkedin: "#",
-      email: "#",
+      facebook: "https://www.facebook.com/share/1FePcFqSsW/",
+      tiktok: "https://www.tiktok.com/@athar_magazine?_t=ZS-8vQf1TuHXQW&_r=1",
+      instagram:
+        "https://www.instagram.com/athar20_25?igsh=aXJtejRjcjd4bGNx&utm_source=qr",
     },
   },
 ];
