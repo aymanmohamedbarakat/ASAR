@@ -5976,7 +5976,7 @@ export const TeamMember = [
   {
     id: "1",
     name: "بلال محمد حلمي",
-    position: "مدير المشروع",
+    position: "طالب",
     description:
       "خبير في الآثار المصرية القديمة مع خبرة 8 سنوات في مجال السياحة التاريخية",
     image: [member1],
@@ -5990,7 +5990,7 @@ export const TeamMember = [
   {
     id: "2",
     name: "حبيبه مبروك محمد",
-    position: "مرشدة سياحية",
+    position: "طالب",
     description: "متخصصة في تاريخ الدولة الحديثة وآثار منطقة الأقصر",
     image: [member2],
     socialLinks: {
@@ -6003,7 +6003,7 @@ export const TeamMember = [
   {
     id: "3",
     name: "رحمه خالد",
-    position: "منسقة الرحلات",
+    position: "طالب",
     description: "خبيرة في تنظيم الزيارات للمواقع الأثرية والمتاحف",
     image: [member3],
     socialLinks: {
@@ -6016,7 +6016,7 @@ export const TeamMember = [
   {
     id: "4",
     name: "عيد أيمن محمد",
-    position: "مصور توثيقي",
+    position: "طالب",
     description: "متخصص في التصوير الفوتوغرافي للآثار والمواقع التاريخية",
     image: [member4],
     socialLinks: {
@@ -6029,7 +6029,7 @@ export const TeamMember = [
   {
     id: "5",
     name: "محمد عصام",
-    position: "باحث تاريخي",
+    position: "طالب",
     description: "باحث متخصص في الحضارة الإسلامية وتاريخ مصر الوسيط",
     image: [member5],
     socialLinks: {
@@ -6042,7 +6042,7 @@ export const TeamMember = [
   {
     id: "6",
     name: "ندا احمد",
-    position: "مسؤولة التسويق",
+    position: "طالب",
     description: "متخصصة في التسويق السياحي والترويج للمواقع الأثرية",
     image: [member6],
     socialLinks: {
@@ -6055,7 +6055,7 @@ export const TeamMember = [
   {
     id: "7",
     name: "رحمة عوض",
-    position: "منسقة المحتوى",
+    position: "طالب",
     description: "متخصصة في إعداد المحتوى التاريخي والثقافي للمواقع السياحية",
     image: [member7],
     socialLinks: {
@@ -6068,7 +6068,7 @@ export const TeamMember = [
   {
     id: "8",
     name: "هاجر القذافي عبد القادر",
-    position: "خبيرة آثار",
+    position: "طالب",
     description: "متخصصة في آثار الدولة القديمة وعلم المصريات",
     image: [member8],
     socialLinks: {
@@ -6081,7 +6081,7 @@ export const TeamMember = [
   {
     id: "9",
     name: "هالة فتوح",
-    position: "مديرة العلاقات العامة",
+    position: "طالب",
     description: "متخصصة في التواصل مع المؤسسات الثقافية والتعليمية",
     image: [member9],
     socialLinks: {
@@ -6094,7 +6094,7 @@ export const TeamMember = [
   {
     id: "10",
     name: "يوسف محمد عبد العال",
-    position: "مطور تقني",
+    position: "طالب",
     description: "مسؤول عن تطوير المنصات التقنية للمواقع السياحية والأثرية",
     image: [member10],
     socialLinks: {
