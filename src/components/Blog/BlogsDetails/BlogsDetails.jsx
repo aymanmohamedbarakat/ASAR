@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useBlog } from "../../../Hooks/blogStore";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import RelatedBlogs from "../RelatedBlogs/RelatedBlogs";
 import Breadcrumb from "../../Breadcrumb/Breadcrumb";
 
 export default function BlogsDetails() {
   const { blogId } = useParams();
-  const { blogs } = useBlog ();
+  const { blogs } = useBlog();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [relatedBlogs, setRelatedBlogs] = useState([]);
@@ -182,14 +182,23 @@ export default function BlogsDetails() {
             {blog.tags && (
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <div className="flex flex-wrap gap-2 justify-end">
-                  {blog.tags.map((tag, idx) => (
-                    <span
-                      key={idx}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
+                  {Array.isArray(blog.tags) 
+                    ? blog.tags.map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                        >
+                          #{tag}
+                        </span>
+                      ))
+                    : typeof blog.tags === 'string' && (
+                        <span
+                          className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                        >
+                          #{blog.tags}
+                        </span>
+                      )
+                  }
                 </div>
               </div>
             )}

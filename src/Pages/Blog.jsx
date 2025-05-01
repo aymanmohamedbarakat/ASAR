@@ -195,7 +195,7 @@ export default function Blog() {
 
         {/* Header Banner */}
         <div className="relative rounded-lg overflow-hidden mb-8 h-64">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-indigo-800"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-900"></div>
           <div className="relative z-10 h-full flex flex-col justify-center p-8 text-right">
             <h1 className="text-4xl font-bold text-white mb-2">الأخبار</h1>
             <p className="text-indigo-100 max-w-xl">

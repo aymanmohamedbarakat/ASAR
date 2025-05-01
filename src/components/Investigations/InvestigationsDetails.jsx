@@ -34,11 +34,15 @@ export default function InvestigationsDetails() {
       setInvestigation(foundInvestigation);
       // Find related investigations based on the same tag
       const related = investigations
-        .filter((inv) => inv.tags === foundInvestigation.tags && inv.id !== foundInvestigation.id)
+        .filter(
+          (inv) =>
+            inv.tags === foundInvestigation.tags &&
+            inv.id !== foundInvestigation.id
+        )
         .slice(0, 3);
       setRelatedInvestigations(related);
     }
-    
+
     setLoading(false);
     // Reset image index when investigation changes
     setActiveImageIndex(0);
@@ -112,7 +116,9 @@ export default function InvestigationsDetails() {
                 <div className="flex items-center gap-1 text-gray-600">
                   <User size={16} className="text-green-500" />
                   <span>{investigation.writer}</span>
-                  {investigation.otherwriter && <span>، {investigation.otherwriter}</span>}
+                  {investigation.otherwriter && (
+                    <span>، {investigation.otherwriter}</span>
+                  )}
                 </div>
               </div>
 
@@ -134,8 +140,8 @@ export default function InvestigationsDetails() {
               loop={true}
               pagination={{ clickable: true }}
               navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
               }}
               autoplay={{
                 delay: 5000,
@@ -163,7 +169,7 @@ export default function InvestigationsDetails() {
                   ))
                 : null}
             </Swiper>
-            
+
             {/* Custom Navigation */}
             <div className="swiper-button-prev absolute top-1/2 left-4 z-10 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-3 shadow-md cursor-pointer hover:bg-green-500 hover:text-white transition-all duration-300">
               <ChevronLeft size={20} />
@@ -171,10 +177,11 @@ export default function InvestigationsDetails() {
             <div className="swiper-button-next absolute top-1/2 right-4 z-10 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-3 shadow-md cursor-pointer hover:bg-green-500 hover:text-white transition-all duration-300">
               <ChevronRight size={20} />
             </div>
-            
+
             {/* Image Counter */}
             <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
-              {activeImageIndex + 1} / {investigation.images ? investigation.images.length : 0}
+              {activeImageIndex + 1} /{" "}
+              {investigation.images ? investigation.images.length : 0}
             </div>
           </div>
 
@@ -183,14 +190,19 @@ export default function InvestigationsDetails() {
             <div className="article-content text-right leading-7 text-gray-800 prose prose-lg max-w-none">
               {/* If description is HTML content */}
               {investigation.description.includes("<") ? (
-                <div dangerouslySetInnerHTML={{ __html: investigation.description }} />
+                <div
+                  className=" [&_ul]:list-disc [&_ul]:px-7 [&_li]:mb-1"
+                  dangerouslySetInnerHTML={{ __html: investigation.description }}
+                />
               ) : (
                 // If description is plain text, split by paragraphs
-                investigation.description.split("\n\n").map((paragraph, idx) => (
-                  <p key={idx} className="mb-4">
-                    {paragraph}
-                  </p>
-                ))
+                investigation.description
+                  .split("\n\n")
+                  .map((paragraph, idx) => (
+                    <p key={idx} className="mb-4">
+                      {paragraph}
+                    </p>
+                  ))
               )}
             </div>
           </div>

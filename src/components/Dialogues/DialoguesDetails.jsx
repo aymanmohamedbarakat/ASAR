@@ -9,9 +9,7 @@ import {
   ChevronLeft,
   ChevronRight,
   MessageSquare,
-  Search,
   Tag,
-  Mic,
   Quote,
 } from "lucide-react";
 
@@ -106,9 +104,6 @@ export default function DialoguesDetails() {
               <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
                 {dialogue.title}
               </h1>
-              <div className="bg-blue-100 text-blue-700 p-2 rounded-full">
-                <Mic size={24} />
-              </div>
             </div>
 
             {/* Meta Information */}
@@ -196,28 +191,28 @@ export default function DialoguesDetails() {
           <div className="p-6 md:p-8">
             <div className="bg-blue-50 p-6 rounded-lg border-r-4 border-blue-500 mb-8 text-right">
               <Quote size={32} className="text-blue-400 mb-2" />
-              <p className="text-xl text-blue-800 font-medium italic">
-                {dialogue.description && dialogue.description.includes("<") ? (
-                  <div className="text-xl text-green-800 font-medium italic">
-                    {/* Extract text from first paragraph of HTML content */}
-                    {dialogue.description
-                      .replace(/<strong>|<\/strong>/g, "")
-                      .replace(/<br\s*\/?>/g, " ")
-                      .replace(/<p>|<\/p>/g, "")
-                      .trim()
-                      .slice(0, 150) + "..."}
-                  </div>
-                ) : (
-                  <p className="text-xl text-green-800 font-medium italic">
-                    {typeof dialogue.description === "string"
-                      ? dialogue.description
-                          .replace(/\*\*/g, "")
-                          .split("\n")[0]
-                          .slice(0, 150) + "..."
-                      : ""}
-                  </p>
-                )}
-              </p>
+              {dialogue.description && dialogue.description.includes("<") ? (
+                <div
+                  className="text-xl text-blue-800 font-medium italic [&_ul]:list-disc [&_ul]:px-5 [&_li]:mb-1"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      dialogue.description
+                        .replace(/<strong>|<\/strong>/g, "")
+                        .replace(/<br\s*\/?>/g, " ")
+                        .trim()
+                        .slice(0, 150) + "...",
+                  }}
+                />
+              ) : (
+                <p className="text-xl text-blue-800 font-medium italic">
+                  {typeof dialogue.description === "string"
+                    ? dialogue.description
+                        .replace(/\*\*/g, "")
+                        .split("\n")[0]
+                        .slice(0, 150) + "..."
+                    : ""}
+                </p>
+              )}
             </div>
           </div>
 

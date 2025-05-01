@@ -33,11 +33,13 @@ export default function ArticlesDetails() {
       setArticle(foundArticle);
       // Find related articles based on the same tag
       const related = articles
-        .filter((art) => art.tags === foundArticle.tags && art.id !== foundArticle.id)
+        .filter(
+          (art) => art.tags === foundArticle.tags && art.id !== foundArticle.id
+        )
         .slice(0, 3);
       setRelatedArticles(related);
     }
-    
+
     setLoading(false);
 
     // Scroll to top when article changes
@@ -60,10 +62,10 @@ export default function ArticlesDetails() {
 
   const formatDescription = (description) => {
     if (!description) return "";
-    
+
     // Remove markdown syntax
     let formattedText = description.replace(/\*\*/g, "");
-    
+
     // Format paragraphs
     return formattedText.split("\n\n").map((paragraph, idx) => (
       <p key={idx} className="mb-4">
@@ -108,13 +110,13 @@ export default function ArticlesDetails() {
         <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
           <div className="p-6 md:p-8 text-right">
             {/* Title with book icon */}
-            <div className="flex items-center justify-end gap-3 mb-6">
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                {article.title}
-              </h1>
+            <div className="flex items-center justify-start gap-3 mb-6">
               <div className="bg-green-100 text-green-700 p-2 rounded-full">
                 <BookOpen size={24} />
               </div>
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+                {article.title}
+              </h1>
             </div>
 
             {/* Meta Information */}
@@ -153,7 +155,7 @@ export default function ArticlesDetails() {
                     className="w-full h-full object-cover aspect-[3/4]"
                   />
                 </div>
-                
+
                 {/* Author Attribution */}
                 <div className="absolute bottom-4 right-4 bg-black bg-opacity-60 text-white px-4 py-2 rounded-lg text-sm">
                   <span className="font-bold">{article.writer}</span>
@@ -179,7 +181,10 @@ export default function ArticlesDetails() {
               ) : (
                 <p className="text-xl text-green-800 font-medium italic">
                   {typeof article.description === "string"
-                    ? article.description.replace(/\*\*/g, "").split('\n')[0].slice(0, 150) + "..."
+                    ? article.description
+                        .replace(/\*\*/g, "")
+                        .split("\n")[0]
+                        .slice(0, 150) + "..."
                     : ""}
                 </p>
               )}
@@ -191,7 +196,10 @@ export default function ArticlesDetails() {
             <div className="article-content text-right leading-7 text-gray-800 prose prose-lg max-w-none">
               {/* If description is HTML content */}
               {article.description && article.description.includes("<") ? (
-                <div dangerouslySetInnerHTML={{ __html: article.description }} />
+                <div
+                  className=" [&_ul]:list-disc [&_ul]:px-7 [&_li]:mb-1"
+                  dangerouslySetInnerHTML={{ __html: article.description }}
+                />
               ) : (
                 // Format the markdown-like description
                 formatDescription(article.description)

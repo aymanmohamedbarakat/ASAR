@@ -169,7 +169,10 @@ export default function ReportsDetails() {
             <div className="article-content text-right leading-7 text-gray-800">
               {/* If description is HTML content */}
               {report.description.includes("<") ? (
-                <div dangerouslySetInnerHTML={{ __html: report.description }} />
+                <div
+                  className=" [&_ul]:list-disc [&_ul]:px-7 [&_li]:mb-1"
+                  dangerouslySetInnerHTML={{ __html: report.description }}
+                />
               ) : (
                 // If description is plain text, split by paragraphs
                 report.description.split("\n\n").map((paragraph, idx) => (
