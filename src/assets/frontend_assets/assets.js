@@ -5977,8 +5977,7 @@ export const TeamMember = [
     id: "1",
     name: "بلال محمد حلمي",
     position: "طالب",
-    description:
-      "خبير في الآثار المصرية القديمة مع خبرة 8 سنوات في مجال السياحة التاريخية",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member1],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -5991,7 +5990,7 @@ export const TeamMember = [
     id: "2",
     name: "حبيبه مبروك محمد",
     position: "طالب",
-    description: "متخصصة في تاريخ الدولة الحديثة وآثار منطقة الأقصر",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member2],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6004,7 +6003,7 @@ export const TeamMember = [
     id: "3",
     name: "رحمه خالد",
     position: "طالب",
-    description: "خبيرة في تنظيم الزيارات للمواقع الأثرية والمتاحف",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member3],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6017,7 +6016,7 @@ export const TeamMember = [
     id: "4",
     name: "عيد أيمن محمد",
     position: "طالب",
-    description: "متخصص في التصوير الفوتوغرافي للآثار والمواقع التاريخية",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member4],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6030,7 +6029,7 @@ export const TeamMember = [
     id: "5",
     name: "محمد عصام",
     position: "طالب",
-    description: "باحث متخصص في الحضارة الإسلامية وتاريخ مصر الوسيط",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member5],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6043,7 +6042,7 @@ export const TeamMember = [
     id: "6",
     name: "ندا احمد",
     position: "طالب",
-    description: "متخصصة في التسويق السياحي والترويج للمواقع الأثرية",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member6],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6056,7 +6055,7 @@ export const TeamMember = [
     id: "7",
     name: "رحمة عوض",
     position: "طالب",
-    description: "متخصصة في إعداد المحتوى التاريخي والثقافي للمواقع السياحية",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member7],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6069,7 +6068,7 @@ export const TeamMember = [
     id: "8",
     name: "هاجر القذافي عبد القادر",
     position: "طالب",
-    description: "متخصصة في آثار الدولة القديمة وعلم المصريات",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member8],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6082,7 +6081,7 @@ export const TeamMember = [
     id: "9",
     name: "هالة فتوح",
     position: "طالب",
-    description: "متخصصة في التواصل مع المؤسسات الثقافية والتعليمية",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member9],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
@@ -6095,7 +6094,7 @@ export const TeamMember = [
     id: "10",
     name: "يوسف محمد عبد العال",
     position: "طالب",
-    description: "مسؤول عن تطوير المنصات التقنية للمواقع السياحية والأثرية",
+    description: "معهد الجزيره العالي للإعلام وعلوم الاتصال قسم الصحافة",
     image: [member10],
     socialLinks: {
       facebook: "https://www.facebook.com/share/1FePcFqSsW/",
