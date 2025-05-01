@@ -142,7 +142,7 @@ export default function Articles() {
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
             >
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative md:h-100 sm:h-70 overflow-hidden">
                 {article.images && article.images[0] ? (
                   <img
                     src={article.images[0]}
