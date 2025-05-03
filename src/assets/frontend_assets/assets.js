@@ -159,7 +159,7 @@ import member9 from "./Team/member9.jpg";
 import member10 from "./Team/member10.jpg";
 
 ////////////////////////////////////////////////////////////
-import logo from "./main-bg.jpg";
+import logo from "./logo.png";
 import menu_icon from "./menu_icon.png";
 import cross_icon from "./cross_icon.png";
 import banner from "./banner.mp4";
