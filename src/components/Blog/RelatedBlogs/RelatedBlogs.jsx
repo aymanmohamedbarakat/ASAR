@@ -15,7 +15,7 @@ export default function RelatedBlogs({ blogs }) {
       {blogs.map((blog) => (
         <Link
           key={blog.id}
-          to={`/blogs/${blog.id}`}
+          to={`/الأخبار/${blog.id}`}
           className="flex gap-3 items-start hover:bg-gray-50 p-2 rounded transition-colors"
         >
           <div className="flex-grow text-right">

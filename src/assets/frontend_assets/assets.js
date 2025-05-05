@@ -160,12 +160,14 @@ import member10 from "./Team/member10.jpg";
 
 ////////////////////////////////////////////////////////////
 import logo from "./logo.png";
+import footerLogo from "./footer_logo.png"
 import menu_icon from "./menu_icon.png";
 import cross_icon from "./cross_icon.png";
 import banner from "./banner.mp4";
 import WhyAsar from "./aaa.mp4";
 export const assets = {
   logo,
+  footerLogo,
   menu_icon,
   cross_icon,
   banner,

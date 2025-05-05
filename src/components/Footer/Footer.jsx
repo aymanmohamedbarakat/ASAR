@@ -27,7 +27,7 @@ export default function Footer() {
             {/* About Column */}
             <div className="flex flex-col items-start">
               <Link to="/" className="mb-4">
-                <img src={assets.logo} className="w-24" alt="الشعار" />
+                <img src={assets.footerLogo} className="w-24" alt="الشعار" />
               </Link>
               <p className="text-gray-300 text-sm mb-4">
                 بوابة إخبارية شاملة تقدم أحدث الأخبار والتقارير والتحليلات في مختلف المجالات  السياحة و الآثار و التاريخ.
