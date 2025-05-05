@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-
 import {
   ArrowRight,
   Calendar,
@@ -12,11 +11,10 @@ import {
   Search,
   Tag,
 } from "lucide-react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useInvestigations } from "../../Hooks/InvestigationsStore";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import { useInvestigations } from "../../store";
 
 export default function InvestigationsDetails() {
   const { id } = useParams();
@@ -192,7 +190,9 @@ export default function InvestigationsDetails() {
               {investigation.description.includes("<") ? (
                 <div
                   className=" [&_ul]:list-disc [&_ul]:px-7 [&_li]:mb-1"
-                  dangerouslySetInnerHTML={{ __html: investigation.description }}
+                  dangerouslySetInnerHTML={{
+                    __html: investigation.description,
+                  }}
                 />
               ) : (
                 // If description is plain text, split by paragraphs

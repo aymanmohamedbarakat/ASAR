@@ -15,8 +15,8 @@ import {
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useDialogues } from "../../Hooks/DialoguesStore";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import { useDialogues } from "../../store";
 
 export default function DialoguesDetails() {
   const { id } = useParams();

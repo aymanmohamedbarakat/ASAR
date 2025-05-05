@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useBlog } from "../../../Hooks/blogStore";
 import { useParams, Link } from "react-router-dom";
-
 import RelatedBlogs from "../RelatedBlogs/RelatedBlogs";
 import Breadcrumb from "../../Breadcrumb/Breadcrumb";
+import { useBlog } from "../../../store";
 
 export default function BlogsDetails() {
   const { blogId } = useParams();
@@ -182,7 +181,7 @@ export default function BlogsDetails() {
             {blog.tags && (
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <div className="flex flex-wrap gap-2 justify-end">
-                  {Array.isArray(blog.tags) 
+                  {Array.isArray(blog.tags)
                     ? blog.tags.map((tag, idx) => (
                         <span
                           key={idx}
@@ -191,14 +190,11 @@ export default function BlogsDetails() {
                           #{tag}
                         </span>
                       ))
-                    : typeof blog.tags === 'string' && (
-                        <span
-                          className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
-                        >
+                    : typeof blog.tags === "string" && (
+                        <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
                           #{blog.tags}
                         </span>
-                      )
-                  }
+                      )}
                 </div>
               </div>
             )}

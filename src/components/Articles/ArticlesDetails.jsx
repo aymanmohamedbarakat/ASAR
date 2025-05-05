@@ -15,8 +15,9 @@ import {
   Quote,
 } from "lucide-react";
 
-import { useArticles } from "../../Hooks/ArticlesStore";
+
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import { useArticles } from "../../store";
 
 export default function ArticlesDetails() {
   const { id } = useParams();

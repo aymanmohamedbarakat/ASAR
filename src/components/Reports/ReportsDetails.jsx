@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-
 import {
   ArrowRight,
   Calendar,
@@ -17,9 +16,10 @@ import {
   Eye,
 } from "lucide-react";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
-import { useReports } from "../../Hooks/reportsStore";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useReports } from "../../store";
+
 export default function ReportsDetails() {
   const { id } = useParams();
   const { reports } = useReports();

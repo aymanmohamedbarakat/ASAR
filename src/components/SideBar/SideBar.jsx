@@ -1,11 +1,11 @@
 import { ChevronRight, CircleX } from "lucide-react";
 import React, { useEffect } from "react";
-import { useLinks, useSideHeader } from "../../Hooks/uiStore";
 import { NavLink, useNavigate } from "react-router-dom";
+import { useLinks, useSideHeader } from "../../store";
 
 export default function SideBar() {
   const { closeSideHeader } = useSideHeader();
-    const { links, setLinks } = useLinks();
+  const { links } = useLinks();
   const navigate = useNavigate();
   useEffect(() => {
     const handleEscape = (e) => {

@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className="App bg-white text-black px-4 sm:px-6 md:px-12 lg:px-20 xl:px-28 ">
       <Routes>
-        <Route path="/" element={<PagesLayout />} >
+        <Route path="/" element={<PagesLayout />}>
           <Route index element={<Home />} />
           <Route path="لماذا-نحن" element={<WhyUS />} />
           <Route path="فريق-العمل" element={<TeamSection />} />
@@ -33,7 +33,10 @@ export default function App() {
           <Route path="حوارات/:id" element={<DialoguesDetails />} />
           <Route path="مقالات" element={<Articles />} />
           <Route path="مقالات/:id" element={<ArticlesDetails />} />
-          <Route path="*" element={<h1 className="text-3xl">هذه الصفحة غير متوفرة</h1>} />
+          <Route
+            path="*"
+            element={<h1 className="text-3xl">هذه الصفحة غير متوفرة</h1>}
+          />
         </Route>
       </Routes>
     </div>
