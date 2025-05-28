@@ -92,7 +92,7 @@ export default function TeamSection() {
                         <div className="flex flex-wrap mt-4 gap-2">
                           {member.socialLinks.tiktok && (
                             <a
-                              href={`mailto:${member.socialLinks.tiktok}`}
+                              href={member.socialLinks.tiktok}
                               className="text-gray-600 hover:text-amber-500 transition-colors duration-300"
                               aria-label="تيك توك"
                             >
